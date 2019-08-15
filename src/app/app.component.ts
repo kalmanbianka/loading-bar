@@ -6,18 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  counter: number = 0;
+  counter: number[] = [];
 
 
 onIncrementCounter(){
-  if(this.counter !== 10){
-  this.counter ++;
+  if(this.counter.length !== 10){
+  this.counter.push(1);
   }
 }
 
 onDecrementCounter(){
-  if(this.counter !== 0){
-  this.counter--;
+  if(this.counter.length !== 0){
+  this.counter.pop();
   }
 }
 }

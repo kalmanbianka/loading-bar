@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoadingBarComponent } from './components/loading-bar/loading-bar.component';
+import { SegmentComponent } from './components/loading-bar/segment/segment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoadingBarComponent
+    LoadingBarComponent,
+    SegmentComponent
   ],
   imports: [
     BrowserModule
